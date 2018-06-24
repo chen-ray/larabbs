@@ -6,6 +6,11 @@ class Topic extends Model
 {
     protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
 
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
     /**
      * 一对一关联
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
