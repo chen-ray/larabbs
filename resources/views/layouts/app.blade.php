@@ -10,6 +10,8 @@
 
     <title>@yield('title', 'LaraBBS') - Laravel 进阶教程</title>
 
+    <meta name="description" content="@yield('description', 'LaraBBS 初学者')" />
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
