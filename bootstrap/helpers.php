@@ -21,11 +21,11 @@ function model_link($title, $model, $prefix = '')
     $model_name = model_plural_name($model);
 
     //
-    $prefix = $prefix ? "/$prefix" : '/';
+    $prefix = $prefix ? "/$prefix/" : '/';
 
     $url    = config('app.url') . $prefix . $model_name . '/' . $model->id;
 
-    return '<a href="' . $url . '" target="_blank"' . $title . '</a>';
+    return '<a href="' . $url . '" target="_blank">' . $title . '</a>';
 }
 
 function model_plural_name($model)
